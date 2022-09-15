@@ -1,0 +1,32 @@
+.container,
+.header {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 12.8rem 0;
+}
+
+.link {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Copyright */
+.attribution {
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+}
+.attribution a {
+  color: inherit;
+}

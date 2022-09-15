@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.header__hero {
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 0;
+
+  /* background-color: #000;
+  color: #bbb; */
+}
+
+.lists {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.lists li {
+  position: relative;
+}
+
+.header-link {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.header-link::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  border-radius: 9px;
+  background-color: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15px) scaleX(0);
+  transition: all 0.2s ease;
+}
+
+.header-link:hover::after {
+  transform: translate(-50%, 15px) scaleX(1);
+}
+
+.menu,
+.close {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  padding: 8rem 0 12.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.1;
+}
+
+.text__content {
+  padding: 2.4rem;
+  width: 50%;
+  border: 2px solid #fff;
+}
+
+.heading__primary {
+  font-size: 6.9rem;
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+/* ABOUT */
+.section__about {
+}
+
+.section__about img {
+  width: 100%;
+}
+
+.about__content {
+  grid-template-columns: 2fr 1fr;
+  align-items: end;
+  position: relative;
+}
+
+.about__text--content {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 6.4rem 6.4rem 0;
+  background-color: #fff;
+  width: 44%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-25px);
+}
+
+.heading-secondary {
+  font-size: 4.7rem;
+  line-height: 1.1;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 2.4rem;
+}
+
+.sub__heading {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+/* CREATIONS */
+.section__creations {
+  padding: 3.2rem 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 0.8rem 3.2rem;
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 100;
+  font-size: 1.6rem;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Creation Gallery */
+.imgs-container {
+  gap: 3.2rem;
+}
+
+.img-box {
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  height: 50rem;
+  gap: 2.4rem;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.img-box:hover .img-caption {
+  color: #000;
+}
+
+.img1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../images/desktop/image-deep-earth.jpg);
+}
+
+.img1:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/desktop/image-deep-earth.jpg);
+}
+
+.img2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../images/desktop/image-night-arcade.jpg);
+}
+
+.img2:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/desktop/image-night-arcade.jpg);
+}
+
+.img3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../images/desktop/image-soccer-team.jpg);
+}
+
+.img3:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/desktop/image-soccer-team.jpg);
+}
+
+.img4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../images/desktop/image-grid.jpg);
+}
+
+.img4:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/desktop/image-grid.jpg);
+}
+
+.img5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../images/desktop/image-from-above.jpg);
+}
+
+.img5:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/desktop/image-from-above.jpg);
+}
+
+.img6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../images/desktop/image-pocket-borealis.jpg);
+}
+
+.img6:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/desktop/image-pocket-borealis.jpg);
+}
+
+.img7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../images/desktop/image-curiosity.jpg);
+}
+
+.img7:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/desktop/image-curiosity.jpg);
+}
+
+.img8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../images/desktop/image-fisheye.jpg);
+}
+
+.img8:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../images/desktop/image-fisheye.jpg);
+}
+
+.img-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  padding: 3.2rem;
+  line-height: 1;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+}
+
+.section-footer {
+  padding: 6.4rem 0;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav__links img {
+  margin-bottom: 1.8rem;
+}
+
+.logo__copyright {
+  color: #fff;
+  grid-column: 4 / -1;
+
+  text-align: end;
+}
+
+.social-icons {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons .lists {
+  margin-left: auto;
+}
+
+.social-icons .header-link::after {
+  width: 100%;
+}
+
+.social-icons .lists li a {
+  font-size: 2.2rem !important;
+}
+
+.social-icons ion-icon {
+  cursor: pointer;
+}
+
+.social-icons ion-icon:not(:last-child) {
+  margin-right: 1.2rem;
+}
+
+.copyright {
+  font-family: "Alata", sans-serif;
+  font-size: 1.6rem;
+  color: #aaa;
+  font-weight: 100;
+  line-height: 1.6;
+}
